@@ -24,3 +24,7 @@ a {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
+.color-main {
+  color: var(--color-primary);
+}
