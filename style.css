@@ -84,6 +84,17 @@ VERTICAL SPACING
 
 /* LOADERS SECTION */
 
-.version-paragraph {
+.header-loaders {
   font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  color: #5b6268;
+}
+
+.select-shape {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
 }
