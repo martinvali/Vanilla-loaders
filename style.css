@@ -1,0 +1,46 @@
+/* FONT SIZES
+
+
+82.56px	
+68.80px
+57.33px
+47.78px
+39.81px
+33.18px
+27.65px
+23.04px
+19.20px
+16.00px
+13.33px
+11.11px
+9.26px
+7.72px
+
+*/
+
+/* HEADER */
+
+.header {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.304rem;
+  color: #212529;
+  font-weight: 600;
+}
+
+.logo-colored {
+  color: var(--color-primary);
+}
+
+.instructions {
+  background-color: var(--color-primary);
+  color: #f3f6fd;
+  font-size: 1.6rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+}
