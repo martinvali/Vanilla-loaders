@@ -20,10 +20,14 @@ a {
 
 .outer-container {
   width: 100vw;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .color-main {
   color: var(--color-primary);
+}
+
+.max-width-container {
+  max-width: 1200px;
 }

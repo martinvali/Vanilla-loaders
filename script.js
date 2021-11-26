@@ -2,7 +2,7 @@
   const startingLoaders = await fetch("https://vanillaloaders.herokuapp.com/", {
     mode: "cors",
   });
-  const data = startingLoaders.json();
+  const data = await startingLoaders.json();
   console.log(data);
   const selectShapeEl = document.querySelector(".select-shape");
   selectShapeEl.addEventListener("change", function () {
