@@ -32,7 +32,7 @@
   color: #343a40; /* Set a suitable text color */
   display: inline-block;
   position: relative;
-  font-size: 64px;
+  font-size: 32px;
 }
 
 .loading-text-2::after {
@@ -99,7 +99,6 @@
   animation-iteration-count: infinite;
   text-align: center;
   transform-origin: center center;
-  margin: 200px 200px;
 }
 
 @keyframes loading-animation-4 {
