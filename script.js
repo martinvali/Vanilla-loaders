@@ -3,7 +3,12 @@
     mode: "cors",
   });
   const data = await startingLoaders.json();
-  console.log(data);
+  const dataContainer = document.querySelector(".spinners-container");
+
+  data.forEach((element) => {
+    const article = document.createElement("article");
+    article.innerHTML = element.html;
+  });
   const selectShapeEl = document.querySelector(".select-shape");
   selectShapeEl.addEventListener("change", function () {
     console.log(this);
