@@ -109,3 +109,8 @@ VERTICAL SPACING
   background-color: white;
   font-family: inherit;
 }
+
+.spinners-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
