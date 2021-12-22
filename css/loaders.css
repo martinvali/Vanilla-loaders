@@ -1,0 +1,295 @@
+.loading-text {
+  color: #343a40; /* Set a suitable text color */
+  font-weight: 600;
+  font-size: 32px;
+  display: inline-block;
+  position: relative;
+}
+
+.loading-text::before {
+  content: "LOADING"; /* Change content to the text of your h1 */
+  color: #5c7cfa; /* Color of the text */
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  left: 0;
+  overflow: hidden;
+  animation: loading-animation 5s ease-in-out forwards; /* Set a suitable time instead of the 5s */
+}
+
+@keyframes loading-animation {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.loading-text-2 {
+  color: #343a40; /* Set a suitable text color */
+  display: inline-block;
+  position: relative;
+  font-size: 64px;
+}
+
+.loading-text-2::after {
+  content: "...";
+  color: #343a40; /* Color of the dots */
+  display: inline-block;
+  width: 0%;
+  overflow: hidden;
+  vertical-align: bottom;
+  animation-name: loading-animation-2;
+  animation-duration: 1.75s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loading-animation-2 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 12.5%;
+  }
+}
+.loading-text-3 {
+  color: #343a40; /* Set a suitable text color */
+  font-weight: 600;
+  font-size: 32px;
+  display: inline-block;
+  position: relative;
+}
+
+.loading-text-3::before {
+  content: "LOADING"; /* Change content to the text of your h1 */
+  color: #5c7cfa; /* Color of the text */
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 18%;
+  left: 0;
+  overflow: hidden;
+  animation: loading-animation-3 5s ease-in-out infinite; /* Set a suitable time instead of the 5s */
+}
+
+@keyframes loading-animation-3 {
+  0% {
+    width: 0%;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0%;
+  }
+}
+.loading-text-4 {
+  color: #343a40; /* Set a suitable text color */
+  font-weight: 600;
+  font-size: 32px;
+  animation-name: loading-animation-4;
+  animation-duration: 2.75s;
+  animation-iteration-count: infinite;
+  text-align: center;
+  transform-origin: center center;
+  margin: 200px 200px;
+}
+
+@keyframes loading-animation-4 {
+  0% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+}
+.loading-text-5 {
+  color: #343a40; /* Set a suitable text color */
+  font-weight: 600;
+  font-size: 32px;
+  display: inline-block;
+  position: relative;
+}
+
+.loading-text-5::before {
+  content: "LOADING"; /* Change content to the text of your h1 */
+  color: #5c7cfa; /* Color of the text */
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  top: 0;
+  vertical-align: center;
+  overflow: hidden;
+  animation: loading-animation-5 5s ease-in-out forwards; /* Set a suitable time instead of the 5s */
+}
+
+@keyframes loading-animation-5 {
+  0% {
+    height: 0%;
+  }
+
+  100% {
+    height: 100%;
+  }
+}
+
+.loading-text-6 {
+  color: #343a40; /* Set a suitable text color */
+  font-weight: 600;
+  font-size: 32px;
+  display: inline-block;
+  position: relative;
+}
+
+.loading-text-6::before {
+  content: "LOADING"; /* Change content to the text of your h1 */
+  color: #5c7cfa; /* Color of the text */
+  display: inline-block;
+  position: absolute;
+  height: -100%;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  animation: loading-animation-6 5s ease-in-out infinite; /* Set a suitable time instead of the 5s */
+}
+
+@keyframes loading-animation-6 {
+  0% {
+    height: 0%;
+  }
+
+  50% {
+    height: 100%;
+  }
+
+  100% {
+    height: 0%;
+  }
+}
+
+.loading-text-7 {
+  color: #fff; /* Set a suitable text color */
+  font-weight: 600;
+  font-size: 32px;
+  display: inline-block;
+  position: relative;
+  animation-name: loading-animation-7;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+@keyframes loading-animation-7 {
+  0% {
+    background-color: #fff;
+  }
+
+  50% {
+    background-color: #4263eb;
+  }
+
+  100% {
+    background-color: #fff;
+  }
+}
+
+.loading-text-8 {
+  color: #fff; /* Set a suitable text color */
+  font-weight: 600;
+  font-size: 32px;
+  display: inline-block;
+  position: relative;
+}
+
+.loading-text-8::before {
+  content: "LOADING..."; /* Change content to the text of your h1 */
+  color: #5c7cfa; /* Color of the text */
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  left: 0;
+  overflow: hidden;
+  border-right: 2px solid #5c7cfa;
+  animation: loading-animation-8 3s forwards,
+    cursor-blinking-8 0.8s steps(2) infinite; /* Set a suitable time instead of the 5s */
+}
+
+@keyframes cursor-blinking-8 {
+  from {
+    border-color: white;
+  }
+
+  to {
+    border-color: #5c7cfa;
+  }
+}
+@keyframes loading-animation-8 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.loading-text-9 {
+  color: #fff; /* Set a suitable text color */
+  font-weight: 600;
+  font-size: 32px;
+  display: inline-block;
+  position: relative;
+}
+
+.loading-text-9::before {
+  content: "LOADING..."; /* Change content to the text of your h1 */
+  color: #5c7cfa; /* Color of the text */
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  left: 0;
+  overflow: hidden;
+  border-right: 2px solid #5c7cfa;
+  animation: loading-animation-9 5s infinite,
+    cursor-blinking-9 0.8s steps(2) infinite; /* Set a suitable time instead of the 5s */
+}
+
+@keyframes cursor-blinking-9 {
+  from {
+    border-color: white;
+  }
+
+  to {
+    border-color: #5c7cfa;
+  }
+}
+@keyframes loading-animation-9 {
+  0% {
+    width: 0%;
+  }
+
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
