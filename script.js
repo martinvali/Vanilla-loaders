@@ -9,9 +9,6 @@
     const article = document.createElement("article");
     article.innerHTML = element.html;
     article.classList.add("spinner-article");
-    article.style.display = "flex";
-    article.style.justifyContent = "center";
-    article.style.alignItems = "center";
 
     dataContainer.append(article);
   });
