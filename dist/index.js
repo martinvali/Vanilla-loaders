@@ -1,0 +1,1 @@
+!async function(){const e=await fetch("https://vanillaloaders.herokuapp.com/",{mode:"cors"}),n=await e.json(),t=document.querySelector(".spinners-container");n.forEach((e=>{const n=document.createElement("article");n.innerHTML=e.html,t.append(n)})),document.querySelector(".select-shape").addEventListener("change",(function(){console.log(this)}))}();
