@@ -38,4 +38,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  height: 0; /* TO MAKE IT A PERFECT RESPONSIVE SQUARE */
+  padding: 45% 0; /* 90% / 2 */
 }
