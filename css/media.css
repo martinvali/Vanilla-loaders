@@ -5,6 +5,9 @@
 }
 
 @media only screen and (min-width: 40.625em) {
+  .spinners-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .outer-container {
     padding-left: 4rem;
     padding-right: 4rem;

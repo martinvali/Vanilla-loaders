@@ -1,7 +1,7 @@
 .loading-text {
   color: #343a40; /* Set a suitable text color */
   font-weight: 600;
-  font-size: 32px;
+  font-size: 24px;
   display: inline-block;
   position: relative;
 }
