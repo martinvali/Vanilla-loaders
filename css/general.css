@@ -41,4 +41,6 @@ a {
   background-color: white;
   height: 0; /* TO MAKE IT A PERFECT RESPONSIVE SQUARE */
   padding: 45% 0; /* 90% / 2 */
+  margin-bottom: 2.4rem;
+  border-radius: 8px;
 }
