@@ -1,5 +1,5 @@
 @media only screen and (min-width: 26em) {
-  .header-loaders {
+  .spinners-container {
     grid-template-columns: 1fr 1fr;
   }
 }
