@@ -292,3 +292,46 @@
     width: 0%;
   }
 }
+
+.container {
+  display: flex;
+  gap: 25px;
+}
+
+.square {
+  display: inline-block;
+  width: 40px;
+  height: 90px;
+  background-color: #5c7cfa;
+  animation-name: loading-animation-rectangle-2;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.square-1 {
+  animation-delay: 0.25s;
+}
+
+.square-2 {
+  animation-delay: 0.5s;
+}
+.square-3 {
+  animation-delay: 0.75s;
+}
+.square-4 {
+  animation-delay: 1s;
+}
+.square-5 {
+  animation-delay: 1.25s;
+}
+
+@keyframes loading-animation-rectangle-2 {
+  20% {
+    transform: scaleY(1.5);
+  }
+
+  40% {
+    transform: scaleY(1);
+  }
+}
