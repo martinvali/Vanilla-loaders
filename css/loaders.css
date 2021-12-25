@@ -338,13 +338,13 @@
 
 .container-rectangle-2 {
   display: flex;
-  gap: 25px;
+  gap: 20px;
 }
 
 .rectangle-2 {
   display: inline-block;
-  width: 40px;
-  height: 90px;
+  width: 20px;
+  height: 60px;
   background-color: #5c7cfa;
   animation-name: loading-animation-rectangle-2;
   animation-duration: 2.5s;
@@ -360,7 +360,10 @@
 }
 
 @keyframes loading-animation-rectangle-2 {
-  50% {
-    transform: translateY(45px);
+  33% {
+    transform: translateY(-20px);
+  }
+  66% {
+    transform: translateY(20px);
   }
 }
