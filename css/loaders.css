@@ -414,17 +414,17 @@
   }
 
   25% {
-    transform: translateX(--animation-translate-distance);
+    transform: translateX(animation-translate-distance);
   }
   50% {
     transform: translate(
-      --animation-translate-distance,
-      --animation-translate-distance
+      animation-translate-distance,
+      animation-translate-distance
     );
   }
 
   75% {
-    transform: translate(0, --animation-translate-distance);
+    transform: translate(0, animation-translate-distance);
   }
 }
 
@@ -434,17 +434,17 @@
   }
 
   25% {
-    transform: translateY(--animation-translate-distance);
+    transform: translateY(animation-translate-distance);
   }
   50% {
     transform: translate(
-      calc(--animation-translate-distance * -1),
-      --animation-translate-distance
+      calc(animation-translate-distance * -1),
+      animation-translate-distance
     );
   }
 
   75% {
-    transform: translate(calc(--animation-translate-distance * -1), 0);
+    transform: translate(calc(animation-translate-distance * -1), 0);
   }
 }
 
@@ -454,17 +454,17 @@
   }
 
   25% {
-    transform: translateX(calc(--animation-translate-distance * -1));
+    transform: translateX(calc(animation-translate-distance * -1));
   }
   50% {
     transform: translate(
-      calc(--animation-translate-distance * -1),
-      calc(--animation-translate-distance * -1)
+      calc(animation-translate-distance * -1),
+      calc(animation-translate-distance * -1)
     );
   }
 
   75% {
-    transform: translate(0, calc(--animation-translate-distance * -1));
+    transform: translate(0, calc(animation-translate-distance * -1));
   }
 }
 
@@ -474,16 +474,16 @@
   }
 
   25% {
-    transform: translateY(calc(--animation-translate-distance * -1));
+    transform: translateY(calc(animation-translate-distance * -1));
   }
   50% {
     transform: translate(
-      --animation-translate-distance,
-      calc(--animation-translate-distance * -1)
+      animation-translate-distance,
+      calc(animation-translate-distance * -1)
     );
   }
 
   75% {
-    transform: translate(--animation-translate-distance, 0);
+    transform: translate(animation-translate-distance, 0);
   }
 }
