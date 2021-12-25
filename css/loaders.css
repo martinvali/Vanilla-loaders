@@ -293,12 +293,12 @@
   }
 }
 
-.container-square-1 {
+.container-rectangle-1 {
   display: flex;
   gap: 15px;
 }
 
-.square-1 {
+.rectangle-1 {
   display: inline-block;
   width: 10px;
   height: 40px;
@@ -309,20 +309,20 @@
   animation-timing-function: linear;
 }
 
-.square-1-1 {
+.rectangle-1-1 {
   animation-delay: 0.25s;
 }
 
-.square-1-2 {
+.rectangle-1-2 {
   animation-delay: 0.5s;
 }
-.square-1-3 {
+.rectangle-1-3 {
   animation-delay: 0.75s;
 }
-.square-1-4 {
+.rectangle-1-4 {
   animation-delay: 1s;
 }
-.square-1-5 {
+.rectangle-1-5 {
   animation-delay: 1.25s;
 }
 
@@ -333,5 +333,34 @@
 
   40% {
     transform: scaleY(1);
+  }
+}
+
+.container-rectangle-2 {
+  display: flex;
+  gap: 25px;
+}
+
+.rectangle-2 {
+  display: inline-block;
+  width: 40px;
+  height: 90px;
+  background-color: #5c7cfa;
+  animation-name: loading-animation-rectangle-2;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.rectangle-2-center {
+  animation-delay: 0.5s;
+}
+.rectangle-2-right {
+  animation-delay: 1s;
+}
+
+@keyframes loading-animation-rectangle-2 {
+  50% {
+    transform: translateY(45px);
   }
 }
