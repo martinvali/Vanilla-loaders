@@ -490,13 +490,13 @@
 
 .container-circle-1 {
   display: flex;
-  gap: 30px;
+  gap: 25px;
 }
 
 .circle-1 {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: #5c7cfa;
   border-radius: 50%;
   animation-name: loading-animation-circle-1;
