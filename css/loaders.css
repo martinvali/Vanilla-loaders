@@ -518,7 +518,10 @@
 }
 
 .container-circle-2 {
-  perspective: 200px;
+  perspective: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .circle-2 {
   display: inline-block;
@@ -544,16 +547,16 @@
     z-index: 0;
   }
   25% {
-    transform: translateZ(50px) translateX(150px);
+    transform: translateZ(15px) translateX(25px);
     z-index: 1;
   }
   50% {
-    transform: translateZ(100px) translateX(0);
+    transform: translateZ(30px) translateX(0);
     z-index: 1;
   }
 
   75% {
-    transform: translateZ(50px) translateX(-150px);
+    transform: translateZ(15px) translateX(-25px);
     z-index: 0;
   }
 }
