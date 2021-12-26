@@ -1,0 +1,318 @@
+[33mcommit 7654d552be7ea47cb59fddabf037543405f1b3c6[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sun Dec 26 20:13:00 2021 +0200
+
+    Adjust circle 1 animation further
+
+[33mcommit 79311c393901fef532b58f4be41354a8abdc1f90[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sun Dec 26 20:08:12 2021 +0200
+
+    adjust circle 1 animation
+
+[33mcommit a6dd88ab0b9807c38c6118bee362ec7e1f0f280e[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sun Dec 26 20:06:27 2021 +0200
+
+    add circle 1 animation
+
+[33mcommit 1f9a7bd794c0d01581fdeb1864a1bd056cda7519[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sun Dec 26 19:57:37 2021 +0200
+
+    FInalize rectangle 3 animation
+
+[33mcommit accd6df682dfcffbbe5d3115515741642acd7a79[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sun Dec 26 19:43:26 2021 +0200
+
+    adjust rectangle 3
+
+[33mcommit b15693b69960830f7f88049274ce5e61105578dc[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sun Dec 26 19:31:29 2021 +0200
+
+    add '--' in front of the variable inside the var function
+
+[33mcommit 5ffe8e9b49bf4976416fee591c92e2cc1c14326e[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sun Dec 26 19:29:47 2021 +0200
+
+    add var function to the css variable
+
+[33mcommit de0ab20a934b2335659d51bb20c9f505e8741ce1[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sun Dec 26 19:27:14 2021 +0200
+
+    change rectangle 3 animation's scope
+
+[33mcommit 3014fd081e274cba5d718e8cb6abddce0b0d6574[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sat Dec 25 20:58:20 2021 +0200
+
+    fix a css variable animation 3 bug
+
+[33mcommit 5bfd76fed517a82fcb492d332cf3e06de24d040f[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sat Dec 25 20:57:01 2021 +0200
+
+    add a css variable to rectangle 3 animation
+
+[33mcommit b204d45d071d4ea5e8b2dd97ce5e2cf9b84e2e13[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sat Dec 25 20:45:32 2021 +0200
+
+    adjust the animation of rectangle 2
+
+[33mcommit a0698e9a2a63b2daf1f0a2853c267f1cd2ff408e[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sat Dec 25 20:41:12 2021 +0200
+
+    add third rectangle animation
+
+[33mcommit 492005cacece0a89612a4e29c9a9346dba2aee3b[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sat Dec 25 20:21:03 2021 +0200
+
+    Adjust rectangle second animation
+
+[33mcommit 06f81a079f9e03064436da1f1beaeb706bcdb7bc[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sat Dec 25 20:09:51 2021 +0200
+
+    Add css for the second rectangle animation
+
+[33mcommit 1afd452f4e91c21fb61998bc37198723cc48957f[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sat Dec 25 19:59:48 2021 +0200
+
+    Adjust first square animation
+
+[33mcommit 73ea59afa7d7ec7c9009c8b1727608825eeff66e[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Fri Dec 24 20:51:07 2021 +0200
+
+    add another loader
+
+[33mcommit 693ee4d8cf0838ba41644b536812415cb1edc864[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Fri Dec 24 20:36:32 2021 +0200
+
+    Change loaders' font size to 24px
+
+[33mcommit ee5c32e880c6d85202956a3569c279c8ac7963a8[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Thu Dec 23 19:03:27 2021 +0200
+
+    Update queries
+
+[33mcommit 419069e246a6cec05cac0f048b1cb6f8ab8c843c[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Thu Dec 23 18:48:19 2021 +0200
+
+    FIx larger phones' media query
+
+[33mcommit a7a79b77e5d4b024eb44106e8e78926f296d6392[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Thu Dec 23 18:42:53 2021 +0200
+
+    add media queries for larger phones
+
+[33mcommit 67eaf0260606cd4cc03f5c38f82b5fc5e7741da1[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Thu Dec 23 18:35:58 2021 +0200
+
+    Add border radius to spinner article
+
+[33mcommit 1d5f954338b5c8427e22477c05f77d587f606074[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Thu Dec 23 18:29:21 2021 +0200
+
+    add background to loaders
+
+[33mcommit d878a3529179ebab48af8656fc4a40237d37e9f6[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Thu Dec 23 18:17:35 2021 +0200
+
+    Change grid to have 2 columns
+
+[33mcommit 65bc6462af35edc64f722749f09f38f219f9b80f[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Wed Dec 22 20:45:25 2021 +0200
+
+    add flexbox css
+
+[33mcommit f8299f57792dd3bf27925a36ede013d497cafd29[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Wed Dec 22 20:38:55 2021 +0200
+
+    Add Flexbox to articles
+
+[33mcommit 30e2ee0436906bcd6b85ed0c4d666562dd112aed[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Wed Dec 22 20:27:11 2021 +0200
+
+    add css grid styles
+
+[33mcommit d02f3f8e986132b2645580a000cc6bb7b8e85a9b[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Wed Dec 22 20:20:19 2021 +0200
+
+    CSS styles
+
+[33mcommit 991a9fec4dc2e331eed153160e893999ec68387f[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Wed Dec 22 19:57:33 2021 +0200
+
+    Add a class to all spinner article elements
+
+[33mcommit f1303919f3d78e9d9bba654614cc802d5db7c0be[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Wed Dec 22 19:54:18 2021 +0200
+
+    Make spinners container to a grid
+
+[33mcommit 05645456648f9020befc9cd1656277036fd33e18[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Wed Dec 22 19:44:54 2021 +0200
+
+    Add loaders's css to index.html
+
+[33mcommit bc329f4de273c45fd82e11a9d81dc84f1c20512e[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Wed Dec 22 19:40:44 2021 +0200
+
+    Add loaders' css
+
+[33mcommit 21ae2b534ba8d117c7a3e4ff271aab25f5aa0e7d[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Wed Dec 22 18:54:43 2021 +0200
+
+    add webpack
+
+[33mcommit 27ac7a31881d7f841ddb27af334efd50b9a28ae6[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Wed Dec 22 18:33:16 2021 +0200
+
+    Console log each spinner for debugging reasons
+
+[33mcommit fe8fdf0f25f4cd13576036af6f3351d1b5639094[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Wed Dec 22 18:29:35 2021 +0200
+
+    Generate and append loader cards
+
+[33mcommit 7f756fdad88930728ac2756c883c25117ad5cf45[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Fri Dec 10 17:55:43 2021 +0200
+
+    Add more styles
+
+[33mcommit 0f1f6a7dff64f3e40a1620ce21221c227ad79d96[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Fri Nov 26 20:58:03 2021 +0200
+
+    increase h1 font size
+
+[33mcommit 64377a2d53b10c9ecd999b6b8e82e22fdfc224a0[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Fri Nov 26 20:56:25 2021 +0200
+
+    Add CSS and HTML
+
+[33mcommit 52b85ccc8b9160ea180d074071789bc9aff32193[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Fri Nov 26 20:33:49 2021 +0200
+
+    add more padding top to main
+
+[33mcommit 3161336ea35a4ead9e486d8a4eae3d481e91d7eb[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Fri Nov 26 20:24:29 2021 +0200
+
+    Change index.html css sources
+
+[33mcommit 0af09ffcf0f6d1322778caea8cdaafa273b26e01[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Fri Nov 26 20:22:34 2021 +0200
+
+    Add max-width container
+
+[33mcommit 9a58875088d36aa3505303eece27c2b51a179b3f[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sun Sep 19 20:03:30 2021 +0300
+
+    Convert data to json
+
+[33mcommit 751f0cc6bbc93f312f4c674ae3fb455447ca9366[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sun Sep 19 20:02:16 2021 +0300
+
+    Change cors mode
+
+[33mcommit a79e5884bbc316cc161d734a06d51dd75b82dd29[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sun Sep 19 19:42:12 2021 +0300
+
+    add Javascript file
+
+[33mcommit 88f7295bb552f414085c90036ef862bbe998bfe9[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sun Sep 19 14:11:40 2021 +0300
+
+    Improve small hero section details
+
+[33mcommit c9b5fb78eee6469aefe93c5f5cd08cdc73836179[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sun Sep 19 14:00:05 2021 +0300
+
+    Increase heading one size
+
+[33mcommit e26b1533a92832f18cf8f3c5306d8ba471168ec8[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sun Sep 19 13:56:05 2021 +0300
+
+    Increase loaders section's header's font size
+
+[33mcommit a52c46610f6892b58b6232d2491d8cac0a524bce[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sun Sep 19 13:54:38 2021 +0300
+
+    Start loaders section's header element
+
+[33mcommit 337d455a288fbe196ae072fdd5a08c5e405622e1[m
+Merge: 20cf777 f9c68dc
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sun Sep 19 13:51:24 2021 +0300
+
+    Merge branch 'main' of https://github.com/martinvali/Vanilla-loaders
+
+[33mcommit f9c68dc70b63d559f77ef86b8f8226e0cc429209[m
+Author: martinvali <martinvali12@gmail.com>
+Date:   Sun Sep 19 13:49:14 2021 +0300
+
+    Delete README.md
+
+[33mcommit 9583673d301ffd34e2f8a5f6709d9d88cd4d6fab[m
+Author: martinvali <martinvali12@gmail.com>
+Date:   Sun Sep 19 13:42:40 2021 +0300
+
+    Initial commit
+
+[33mcommit 20cf7770c2021b4e9f612d98648609a97dc0b5c0[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sun Sep 19 13:34:54 2021 +0300
+
+    Finish mobile hero section
+
+[33mcommit 9478b1cd4166500b151d0565c26bc1a048a3407c[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sun Sep 19 12:24:24 2021 +0300
+
+    Add mobile header styles
+
+[33mcommit 695ea74997340066fae4987b95e05bab664752a8[m
+Author: Martin Väli <martinvali12@gmail.com>
+Date:   Sun Sep 19 12:07:46 2021 +0300
+
+    Initial commit

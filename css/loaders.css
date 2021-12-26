@@ -516,3 +516,44 @@
     transform: scale(1);
   }
 }
+
+.container-circle-2 {
+  perspective: 200px;
+}
+.circle-2 {
+  display: inline-block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #5c7cfa;
+  border-radius: 50%;
+  animation-name: loading-animation-circle-2;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.back {
+  background-color: #cc5de8;
+  animation-delay: 1.25s;
+}
+
+@keyframes loading-animation-circle-2 {
+  0% {
+    transform: translateZ(0) translateX(0);
+    z-index: 0;
+  }
+  25% {
+    transform: translateZ(50px) translateX(150px);
+    z-index: 1;
+  }
+  50% {
+    transform: translateZ(100px) translateX(0);
+    z-index: 1;
+  }
+
+  75% {
+    transform: translateZ(50px) translateX(-150px);
+    z-index: 0;
+  }
+}
