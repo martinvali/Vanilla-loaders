@@ -379,12 +379,12 @@
   grid-template-columns: auto auto;
   column-gap: 16px;
   row-gap: 16px;
-  --animation-translate-distance: 70px;
+  --animation-translate-distance: 56px; /*Make sure this is equal to row-gap of .container-rectangle-3 + the height of rectangle-3   */
 }
 .rectangle-3 {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: #5c7cfa;
 }
 
