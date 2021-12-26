@@ -379,13 +379,13 @@
   grid-template-columns: auto auto;
   column-gap: 16px;
   row-gap: 16px;
+  --animation-translate-distance: 45px;
 }
 .rectangle-3 {
   display: inline-block;
   width: 80px;
   height: 80px;
   background-color: #5c7cfa;
-  --animation-translate-distance: 45px;
 }
 
 .rectangle-3 {
