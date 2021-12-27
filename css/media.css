@@ -4,10 +4,12 @@
   }
 }
 
-@media only screen and (min-width: 40.625em) {
+@media only screen and (min-width: 35em) {
   .spinners-container {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+@media only screen and (min-width: 40.625em) {
   .outer-container {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -36,5 +38,11 @@
 
   .logo {
     font-size: 2.765rem;
+  }
+}
+
+@media only screen and (min-width: 50em) {
+  .spinners-container {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
