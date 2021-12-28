@@ -48,3 +48,28 @@ a {
   margin-bottom: 2.4rem;
   border-radius: 8px;
 }
+
+.spinner-article.loading {
+  background-image: linear-gradient(
+    to right,
+    white 0%,
+    #fdfeff 30%,
+    #f8f8f8 70%,
+    white 100%
+  );
+  background-repeat: no-repeat;
+  animation-name: fb-shimmer;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fb-shimmer {
+  from {
+    background-position: -200px;
+  }
+
+  to {
+    background-position: 200px;
+  }
+}
