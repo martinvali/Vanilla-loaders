@@ -638,8 +638,8 @@
 
 .circle-5 {
   display: inline-block;
-  width: 125px;
-  height: 125px;
+  width: 115px;
+  height: 115px;
   border-radius: 50%;
   border: 10px solid;
   border-color: #5c7cfa transparent #5c7cfa transparent;
@@ -655,5 +655,55 @@
   }
   100% {
     transform: rotateZ(360deg);
+  }
+}
+
+.circle-6 {
+  display: inline-block;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  background-color: white;
+
+  position: absolute;
+  animation-name: loading-animation;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+.circle-6::before {
+  background-color: #5c7cfa;
+  content: "";
+  top: 50%;
+  display: inline-block;
+  border-radius: 0 0 0 57.5px;
+  width: 57.5px;
+  height: 57.5px;
+  position: absolute;
+}
+
+.circle-6::after {
+  background-color: #5c7cfa;
+  content: "";
+  bottom: 50%;
+  right: 0;
+  display: inline-block;
+  border-radius: 0 57.5px 0 0;
+  width: 57.5px;
+  height: 57.5px;
+  position: absolute;
+}
+
+@keyframes loading-animation-circle-6 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    transform: rotateZ(360deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(720deg);
+    opacity: 0;
   }
 }
