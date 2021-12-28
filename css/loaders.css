@@ -666,7 +666,7 @@
   background-color: white;
 
   position: absolute;
-  animation-name: loading-animation;
+  animation-name: loading-animation-circle-6;
   animation-iteration-count: infinite;
   animation-duration: 2s;
 }
