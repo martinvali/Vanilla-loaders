@@ -15,11 +15,11 @@
   data.forEach((element, index) => {
     const article = articles[index];
     const anchor = document.createElement("a");
+    anchor.classList.add("loader-anchor");
     anchor.href = `https://vanilla-loaders.netlify.app/${element._id}}`;
-    anchor.style.display = "block";
     article.classList.remove("loading");
     article.innerHTML = element.html;
-    article.append(anchor);
+    article.prepend(anchor);
   });
   const selectShapeEl = document.querySelector(".select-shape");
   selectShapeEl.addEventListener("change", function () {

@@ -48,6 +48,7 @@ a {
   margin-bottom: 2.4rem;
   border-radius: 8px;
   transition: 0.25s all;
+  position: relative;
 }
 
 .spinner-article:hover {
@@ -69,6 +70,13 @@ a {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
+}
+
+.loader-anchor {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes fb-shimmer {
