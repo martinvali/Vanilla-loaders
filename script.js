@@ -3,6 +3,7 @@
 
   for (let i = 1; i <= 20; i++) {
     const article = document.createElement("article");
+
     article.classList.add("spinner-article", "loading");
     dataContainer.append(article);
   }
@@ -12,8 +13,13 @@
   const data = await startingLoaders.json();
   const articles = document.querySelectorAll(".spinner-article");
   data.forEach((element, index) => {
-    articles[index].classList.remove("loading");
-    articles[index].innerHTML = element.html;
+    const article = articles[index];
+    const anchor = document.createElement("a");
+    anchor.href = `https://vanilla-loaders.netlify.app/${element._id}}`;
+    anchor.style.display = "block";
+    article.classList.remove("loading");
+    article.innerHTML = element.html;
+    article.append(anchor);
   });
   const selectShapeEl = document.querySelector(".select-shape");
   selectShapeEl.addEventListener("change", function () {
