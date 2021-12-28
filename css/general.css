@@ -53,6 +53,7 @@ a {
 .spinner-article:hover {
   transform: scale(1.05);
   cursor: pointer;
+  box-shadow: 0px 6px 15px #e1e1e1;
 }
 
 .spinner-article.loading {
