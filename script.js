@@ -12,7 +12,7 @@
   const data = await startingLoaders.json();
   const articles = document.querySelectorAll(".spinner-article");
   data.forEach((element, index) => {
-    articles[index].append(element);
+    articles[index].innerHTML = element;
   });
   const selectShapeEl = document.querySelector(".select-shape");
   selectShapeEl.addEventListener("change", function () {
