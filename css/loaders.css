@@ -629,6 +629,7 @@
 @keyframes loading-animation-circle-4 {
   0% {
     opacity: 1;
+    transform: translateX(-80px);
   }
   100% {
     transform: translateX(80px);
