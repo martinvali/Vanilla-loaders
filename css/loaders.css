@@ -606,14 +606,14 @@
 }
 
 .circle-loader-4-1 {
-  animation-name: loading-animation;
+  animation-name: loading-animation-circle-4;
   animation-iteration-count: infinite;
   transition-timing-function: linear;
 
   animation-delay: 0.25s;
 }
 .circle-loader-4-2 {
-  animation-name: loading-animation;
+  animation-name: loading-animation-circle-4;
   animation-iteration-count: infinite;
   transition-timing-function: linear;
 
@@ -621,7 +621,7 @@
 }
 
 .circle-loader-4-3 {
-  animation-name: loading-animation;
+  animation-name: loading-animation-circle-4;
   animation-iteration-count: infinite;
   transition-timing-function: linear;
   animation-delay: 0.75s;
