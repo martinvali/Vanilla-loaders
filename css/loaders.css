@@ -591,14 +591,14 @@
 
 .circle-loaders {
   position: relative;
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
 }
 .circle-loader {
   opacity: 0;
   display: inline-block;
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   background-color: #5c7cfa;
   position: absolute;
@@ -616,7 +616,6 @@
   animation-name: loading-animation-circle-4;
   animation-iteration-count: infinite;
   transition-timing-function: linear;
-
   animation-delay: 0.5s;
 }
 
@@ -632,7 +631,7 @@
     opacity: 1;
   }
   100% {
-    transform: translateX(10px);
+    transform: translateX(80px);
     opacity: 0;
   }
 }
