@@ -707,3 +707,40 @@
     opacity: 0;
   }
 }
+
+.dot-loader {
+  display: inline-block;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  border: 10px solid #f1f3f5;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot-loader::after {
+  content: "";
+  background-color: transparent;
+  display: inline-block;
+  position: absolute;
+  border: 10px solid;
+  border-radius: 50%;
+  width: 115px;
+  height: 115px;
+  border-color: #5c7cfa transparent transparent transparent;
+  animation-name: loading-animation-circle-7;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loading-animation-circle-7 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
