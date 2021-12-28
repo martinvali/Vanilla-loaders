@@ -1,8 +1,8 @@
 (async function () {
+  const dataContainer = document.querySelector(".spinners-container");
+
   for (let i = 1; i <= 20; i++) {
-    const dataContainer = document.querySelector(".spinners-container");
     const article = document.createElement("article");
-    article.innerHTML = element.html;
     article.classList.add("spinner-article");
     dataContainer.append(article);
   }
