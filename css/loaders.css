@@ -708,7 +708,7 @@
   }
 }
 
-.dot-loader {
+.circle-7 {
   display: inline-block;
   width: 115px;
   height: 115px;
@@ -720,7 +720,7 @@
   align-items: center;
 }
 
-.dot-loader::after {
+.circle-7::after {
   content: "";
   background-color: transparent;
   display: inline-block;
