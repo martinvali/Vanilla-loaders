@@ -609,7 +609,6 @@
   animation-name: loading-animation-circle-4;
   animation-iteration-count: infinite;
   transition-timing-function: linear;
-
   animation-delay: 0.25s;
 }
 .circle-loader-4-2 {
@@ -634,5 +633,27 @@
   100% {
     transform: translateX(50px);
     opacity: 0;
+  }
+}
+
+.circle-5 {
+  display: inline-block;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  border: 10px solid;
+  border-color: #5c7cfa transparent #5c7cfa transparent;
+  animation-name: loading-animation-circle-5;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes loading-animation-circle-5 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
   }
 }
