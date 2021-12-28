@@ -722,6 +722,7 @@
 
 .circle-7::after {
   content: "";
+  box-sizing: border-box;
   background-color: transparent;
   display: inline-block;
   position: absolute;
