@@ -16,7 +16,7 @@
     const article = articles[index];
     const anchor = document.createElement("a");
     anchor.classList.add("loader-anchor");
-    anchor.href = `https://vanillaloaders.herokuapp.com/${element._id}}`;
+    anchor.href = `https://vanillaloaders.herokuapp.com/loaders/${element._id}}`;
     article.classList.remove("loading");
     article.innerHTML = element.html;
     article.prepend(anchor);
