@@ -30,6 +30,8 @@ import gsap from "gsap";
   });
 
   barba.init({
+    debug: true,
+
     transitions: [
       {
         leave(data) {
