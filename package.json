@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/martinvali/Vanilla-loaders#readme",
   "dependencies": {
+    "@barba/core": "^2.9.7",
+    "gsap": "^3.9.1",
     "webpack": "^5.65.0"
   },
   "devDependencies": {
