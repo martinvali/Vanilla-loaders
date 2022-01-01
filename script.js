@@ -1,5 +1,8 @@
 import barba from "@barba/core";
 import gsap from "gsap";
+import barbaCss from "@barba/css";
+
+barba.use(barbaCss);
 
 barba.init({
   transitions: [
