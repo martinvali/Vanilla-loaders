@@ -4,27 +4,6 @@ import barbaCss from "@barba/css";
 
 barba.use(barbaCss);
 
-barba.init({
-  transitions: [
-    {
-      leave(data) {
-        console.log("hlevae");
-        return gsap.to(data.current.container, {
-          opacity: 0,
-          duration: 2,
-        });
-      },
-      enter(data) {
-        console.log("henter");
-
-        return gsap.from(data.next.container, {
-          opacity: 0,
-          duration: 2,
-        });
-      },
-    },
-  ],
-});
 (async function () {
   const dataContainer = document.querySelector(".spinners-container");
 
@@ -51,5 +30,27 @@ barba.init({
   const selectShapeEl = document.querySelector(".select-shape");
   selectShapeEl.addEventListener("change", function () {
     console.log(this);
+  });
+
+  barba.init({
+    transitions: [
+      {
+        leave(data) {
+          console.log("hlevae");
+          return gsap.to(data.current.container, {
+            opacity: 0,
+            duration: 2,
+          });
+        },
+        enter(data) {
+          console.log("henter");
+
+          return gsap.from(data.next.container, {
+            opacity: 0,
+            duration: 2,
+          });
+        },
+      },
+    ],
   });
 })();
