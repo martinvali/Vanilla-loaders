@@ -1,8 +1,4 @@
-import barba from "@barba/core";
 import gsap from "gsap";
-import barbaCss from "@barba/css";
-
-barba.use(barbaCss);
 
 (async function () {
   const dataContainer = document.querySelector(".spinners-container");
