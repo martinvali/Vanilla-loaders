@@ -19,7 +19,11 @@ import gsap from "gsap";
     const article = articles[index];
     const anchor = document.createElement("a");
     anchor.classList.add("loader-anchor");
-    anchor.href = `https://vanillaloaders.herokuapp.com/loaders/${element._id}`;
+    if (element) {
+      anchor.href = `https://vanillaloaders.herokuapp.com/loaders/${element._id}`;
+    } else {
+      anchor.href = "instructions.html";
+    }
     article.classList.remove("loading");
     article.innerHTML = element.html;
     article.prepend(anchor);
@@ -29,27 +33,29 @@ import gsap from "gsap";
     console.log(this);
   });
 
-  barba.init({
-    debug: true,
+  setTimeout(() => {
+    barba.init({
+      debug: true,
 
-    transitions: [
-      {
-        leave(data) {
-          console.log("hlevae");
-          return gsap.to(data.current.container, {
-            opacity: 0,
-            duration: 2,
-          });
-        },
-        enter(data) {
-          console.log("henter");
+      transitions: [
+        {
+          leave(data) {
+            console.log("hlevae");
+            return gsap.to(data.current.container, {
+              opacity: 0,
+              duration: 2,
+            });
+          },
+          enter(data) {
+            console.log("henter");
 
-          return gsap.from(data.next.container, {
-            opacity: 0,
-            duration: 2,
-          });
+            return gsap.from(data.next.container, {
+              opacity: 0,
+              duration: 2,
+            });
+          },
         },
-      },
-    ],
-  });
+      ],
+    });
+  }, 1500);
 })();
