@@ -7,7 +7,6 @@ barba.use(barbaCss);
 barba.init({
   transitions: [
     {
-      name: "opacity",
       leave(data) {
         console.log("hlevae");
         return gsap.to(data.current.container, {
