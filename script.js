@@ -6,12 +6,15 @@ barba.init({
     {
       name: "opacity",
       leave(data) {
+        console.log("hlevae");
         return gsap.to(data.current.container, {
           opacity: 0,
           duration: 2,
         });
       },
       enter(data) {
+        console.log("henter");
+
         return gsap.from(data.next.container, {
           opacity: 0,
           duration: 2,
