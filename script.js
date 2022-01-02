@@ -1,3 +1,25 @@
+import barba from "@barba/core";
+import gsap from "gsap";
+
+barba.init({
+  transitions: [
+    {
+      leave(data) {
+        return gsap.to(data.current.container, {
+          opacity: 0,
+          duration: 2,
+        });
+      },
+      enter(data) {
+        return gsap.from(data.next.container, {
+          opacity: 0,
+          duration: 2,
+        });
+      },
+    },
+  ],
+});
+
 (async function () {
   const dataContainer = document.querySelector(".spinners-container");
 
@@ -26,13 +48,12 @@
     article.prepend(anchor);
   });
   const selectShapeEl = document.querySelector(".select-shape");
-  selectShapeEl.addEventListener("change", function () {
-    console.log(this);
+  selectShapeEl.addEventListener("change", async function () {
+    const response = await fetch(
+      `https://vanillaloaders.herokuapp.com/loaders?type=${this.value}`
+    );
+
+    const loaders = response.json();
+    console.log(loaders);
   });
-
-  const script = document.createElement("script");
-  script.type = "text/javascript";
-  script.src = "./dist/barba.js";
-
-  document.head.appendChild(script);
 })();
