@@ -53,7 +53,7 @@ barba.init({
       `https://vanillaloaders.herokuapp.com/loaders?type=${this.value}`
     );
 
-    const loaders = response.json();
+    const loaders = await response.json();
     console.log(loaders);
   });
 })();
