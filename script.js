@@ -1,6 +1,3 @@
-import barba from "@barba/core";
-import gsap from "gsap";
-
 (async function () {
   const dataContainer = document.querySelector(".spinners-container");
 
@@ -33,29 +30,9 @@ import gsap from "gsap";
     console.log(this);
   });
 
-  setTimeout(() => {
-    barba.init({
-      debug: true,
+  const script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = "./dist/barba.js";
 
-      transitions: [
-        {
-          leave(data) {
-            console.log("hlevae");
-            return gsap.to(data.current.container, {
-              opacity: 0,
-              duration: 2,
-            });
-          },
-          enter(data) {
-            console.log("henter");
-
-            return gsap.from(data.next.container, {
-              opacity: 0,
-              duration: 2,
-            });
-          },
-        },
-      ],
-    });
-  }, 1500);
+  document.head.appendChild(script);
 })();

@@ -1,6 +1,9 @@
 module.exports = {
-  entry: "/script.js",
+  entry: {
+    barba: "/barba.js",
+    index: "/script.js",
+  },
   output: {
-    filename: "index.js",
+    filename: "[name].js",
   },
 };
