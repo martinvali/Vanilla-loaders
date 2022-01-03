@@ -47,7 +47,15 @@ barba.init({
     article.innerHTML = element.html;
     article.prepend(anchor);
   });
+})();
+
+(function selectShapeEl() {
+  let randomNum;
   const selectShapeEl = document.querySelector(".select-shape");
+  selectShapeEl.addEventListener("mouseover", async function () {
+    randomNum = Math.floor(Math.random() * 20) + 1;
+    console.log(randomNum);
+  });
   selectShapeEl.addEventListener("change", async function () {
     const response = await fetch(
       `https://vanillaloaders.herokuapp.com/loaders?type=${this.value}`
