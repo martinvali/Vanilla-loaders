@@ -41,8 +41,6 @@ barba.init({
     anchor.classList.add("loader-anchor");
     if (element) {
       anchor.href = `https://vanillaloaders.herokuapp.com/loaders/${element._id}`;
-    } else {
-      anchor.href = "instructions.html";
     }
     article.classList.remove("loading");
     article.innerHTML = element.html;
@@ -51,7 +49,8 @@ barba.init({
 })();
 
 (function selectShapeEl() {
-  let spinnerEls = document.querySelectorAll(".spinner-article");
+  const spinnerElsContainer = document.querySelector(".spinners-container");
+  let spinnerEls;
   const selectShapeEl = document.querySelector(".select-shape");
 
   selectShapeEl.addEventListener("change", async function () {
@@ -68,7 +67,20 @@ barba.init({
     const loaders = await response.json();
 
     if (loaders.length > spinnerEls.length) {
-      console.log("Problemo");
+      const amountToAdd = loaders.length - spinnerEls.length;
+      for (let i = 0; i <= amountToAdd; i++) {
+        const article = document.createElement("article");
+        article.classList.add("spinner-article", "loading");
+        spinnerElsContainer.append(article);
+      }
+    } else if (loaders.length < spinnerEls.length) {
+      const amountToRemove = spinnerEls.length - loaders.length;
+      console.log(amountToRemove);
+      for (let i = 0; i <= amountToRemove; i++) {}
     }
+    spinnerEls = document.querySelectorAll(".spinner-article");
+    spinnerEls.forEach(function (el, i) {
+      el.append;
+    });
   });
 })();
