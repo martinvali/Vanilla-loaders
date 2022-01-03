@@ -63,11 +63,12 @@ barba.init({
     );
 
     spinnerEls.forEach(function (el, index) {
-      if (index + 1 !== randomNum) {
-        el.style.display = "none";
-      } else {
-        el.style.transform = "scale(1.5)";
+      if (index + 1 === randomNum) {
+        const innerSpinner = el.querySelector(":not(.loader-anchor)");
+        innerSpinner.parentNode.insertBefore(innerSpinner);
+        console.log(innerSpinner);
       }
+      el.remove();
     });
 
     const loaders = await response.json();
