@@ -82,7 +82,7 @@ barba.init({
     spinnerEls = document.querySelectorAll(".spinner-article");
     spinnerEls.forEach(function (el, i) {
       const loader = loaders[i];
-      el.innerHTML = loader;
+      el.innerHTML = loader.html;
     });
   });
 })();
