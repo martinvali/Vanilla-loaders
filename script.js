@@ -75,8 +75,9 @@ barba.init({
       }
     } else if (loaders.length < spinnerEls.length) {
       const amountToRemove = spinnerEls.length - loaders.length;
-      console.log(amountToRemove);
-      for (let i = 0; i <= amountToRemove; i++) {}
+      for (let i = 0; i <= amountToRemove; i++) {
+        spinnerElsContainer.removeChild(spinnerElsContainer.lastChild);
+      }
     }
     spinnerEls = document.querySelectorAll(".spinner-article");
     spinnerEls.forEach(function (el, i) {
