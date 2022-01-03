@@ -51,24 +51,17 @@ barba.init({
 })();
 
 (function selectShapeEl() {
-  let randomNum;
   const spinnerEls = document.querySelectorAll(".spinner-article");
   const selectShapeEl = document.querySelector(".select-shape");
-  selectShapeEl.addEventListener("mouseover", async function () {
-    randomNum = Math.floor(Math.random() * 20) + 1;
-  });
+
   selectShapeEl.addEventListener("change", async function () {
     const response = await fetch(
       `https://vanillaloaders.herokuapp.com/loaders?type=${this.value}`
     );
 
-    spinnerEls.forEach(function (el, index) {
-      if (index + 1 === randomNum) {
-        const innerSpinner = el.querySelector(":not(.loader-anchor)");
-        innerSpinner.parentNode.before(innerSpinner);
-        console.log(innerSpinner);
-      }
-      el.remove();
+    spinnerEls.forEach(function (el) {
+      el.textContent = "";
+      el.classList.add("loading");
     });
 
     const loaders = await response.json();
