@@ -1,5 +1,6 @@
 import barba from "@barba/core";
 import gsap from "gsap";
+import { random } from "gsap/all";
 
 barba.init({
   transitions: [
@@ -51,17 +52,24 @@ barba.init({
 
 (function selectShapeEl() {
   let randomNum;
+  const spinnerEls = document.querySelectorAll(".spinner-article");
   const selectShapeEl = document.querySelector(".select-shape");
   selectShapeEl.addEventListener("mouseover", async function () {
     randomNum = Math.floor(Math.random() * 20) + 1;
-    console.log(randomNum);
   });
   selectShapeEl.addEventListener("change", async function () {
     const response = await fetch(
       `https://vanillaloaders.herokuapp.com/loaders?type=${this.value}`
     );
 
+    spinnerEls.forEach(function (el, index) {
+      if (index + 1 !== randomNum) {
+        el.style.display = "none";
+      } else {
+        el.style.transform = "scale(1.5)";
+      }
+    });
+
     const loaders = await response.json();
-    console.log(loaders);
   });
 })();
