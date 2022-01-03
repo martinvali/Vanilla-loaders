@@ -81,7 +81,8 @@ barba.init({
     }
     spinnerEls = document.querySelectorAll(".spinner-article");
     spinnerEls.forEach(function (el, i) {
-      el.append;
+      const loader = loaders[i];
+      el.innerHTML = loader;
     });
   });
 })();
