@@ -65,7 +65,7 @@ barba.init({
     spinnerEls.forEach(function (el, index) {
       if (index + 1 === randomNum) {
         const innerSpinner = el.querySelector(":not(.loader-anchor)");
-        innerSpinner.parentNode.insertBefore(innerSpinner);
+        innerSpinner.parentNode.before(innerSpinner);
         console.log(innerSpinner);
       }
       el.remove();
