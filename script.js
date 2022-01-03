@@ -51,19 +51,24 @@ barba.init({
 })();
 
 (function selectShapeEl() {
-  const spinnerEls = document.querySelectorAll(".spinner-article");
+  let spinnerEls = document.querySelectorAll(".spinner-article");
   const selectShapeEl = document.querySelector(".select-shape");
 
   selectShapeEl.addEventListener("change", async function () {
-    const response = await fetch(
-      `https://vanillaloaders.herokuapp.com/loaders?type=${this.value}`
-    );
-
+    spinnerEls =
+      document.querySelectorAll(".spinner-article"); /* Update spinnerels */
     spinnerEls.forEach(function (el) {
       el.textContent = "";
       el.classList.add("loading");
     });
+    const response = await fetch(
+      `https://vanillaloaders.herokuapp.com/loaders?type=${this.value}`
+    );
 
     const loaders = await response.json();
+
+    if (loaders.length > spinnerEls.length) {
+      console.log("Problemo");
+    }
   });
 })();
