@@ -746,3 +746,26 @@
     transform: rotateZ(360deg);
   }
 }
+
+.circle-8 {
+  display: inline-block;
+  border-radius: 50%;
+  width: 115px;
+  height: 115px;
+  background: radial-gradient(white 53%, transparent 55%),
+    conic-gradient(transparent 90deg, #5c7cfa 270deg);
+  animation-name: loading-animation-circle-8;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes loading-animation-circle-8 {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
