@@ -24,7 +24,7 @@ barba.init({
 (async function () {
   const dataContainer = document.querySelector(".spinners-container");
 
-  for (let i = 1; i <= 20; i++) {
+  for (let i = 1; i <= 19; i++) {
     const article = document.createElement("article");
 
     article.classList.add("spinner-article", "loading");
@@ -39,9 +39,9 @@ barba.init({
     const article = articles[index];
     const anchor = document.createElement("a");
     anchor.classList.add("loader-anchor");
-    if (element) {
-      anchor.href = `https://vanillaloaders.herokuapp.com/loaders/${element._id}`;
-    }
+
+    anchor.href = `https://vanillaloaders.herokuapp.com/loaders/${element._id}`;
+
     article.classList.remove("loading");
     article.innerHTML = element.html;
     article.prepend(anchor);
@@ -82,7 +82,12 @@ barba.init({
     spinnerEls = document.querySelectorAll(".spinner-article");
     spinnerEls.forEach(function (el, i) {
       const loader = loaders[i];
+      const anchor = document.createElement("a");
+      anchor.classList.add("loader-anchor");
+      anchor.href = `https://vanillaloaders.herokuapp.com/loaders/${loader._id}`;
+      el.classList.remove("loading");
       el.innerHTML = loader.html;
+      el.prepend(anchor);
     });
   });
 })();
