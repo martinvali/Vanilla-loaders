@@ -69,7 +69,7 @@ barba.init({
     if (loaders.length > spinnerEls.length) {
       const amountToAdd = loaders.length - spinnerEls.length;
       console.log(loaders.length, spinnerEls.length);
-      for (let i = 0; i <= amountToAdd; i++) {
+      for (let i = 0; i < amountToAdd; i++) {
         const article = document.createElement("article");
         article.classList.add("spinner-article", "loading");
         spinnerElsContainer.append(article);
@@ -77,7 +77,7 @@ barba.init({
     } else if (loaders.length < spinnerEls.length) {
       const amountToRemove = spinnerEls.length - loaders.length;
       console.log(loaders.length, spinnerEls.length);
-      for (let i = 0; i <= amountToRemove; i++) {
+      for (let i = 0; i < amountToRemove; i++) {
         spinnerElsContainer.removeChild(spinnerElsContainer.lastChild);
       }
     }
