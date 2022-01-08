@@ -57,6 +57,7 @@
     flex-direction: row;
   }
   .section-main-img {
-    width: 50%;
+    display: block;
+    width: 100%;
   }
 }
