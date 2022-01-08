@@ -56,6 +56,11 @@ VERTICAL SPACING
   font-size: 1.6rem;
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.instructions:hover {
+  background-color: #4c6ef5;
 }
 
 /* HERO SECTION */

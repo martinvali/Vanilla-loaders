@@ -81,4 +81,12 @@
   .hero-img {
     width: 90%;
   }
+
+  .header {
+    padding-top: 4rem;
+  }
+
+  .logo {
+    font-size: 3.318rem;
+  }
 }
