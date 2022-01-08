@@ -54,6 +54,7 @@
 
   .section-hero {
     display: flex;
+    flex-direction: row;
   }
   .section-main-img {
     width: 50%;
