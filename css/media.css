@@ -51,4 +51,11 @@
   .spinners-container {
     grid-template-columns: repeat(5, 1fr);
   }
+
+  .section-hero {
+    display: flex;
+  }
+  .section-main-img {
+    width: 50%;
+  }
 }
