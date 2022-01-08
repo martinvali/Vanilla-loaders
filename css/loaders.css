@@ -759,7 +759,7 @@
   height: 10px;
   background-color: #5c7cfa;
   left: 50%;
-  transform-origin: 0 57.5px;
+  transform-origin: 0 47.5px;
   transform: translateX(-50%) translateY(-100%);
   border-radius: 50%;
   animation-name: loading-animation-circle-9;
