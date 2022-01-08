@@ -65,7 +65,7 @@
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
-    gap: 18%;
+    gap: 15%;
   }
 
   .section-main-text {
@@ -76,5 +76,9 @@
     display: block;
     width: 90%;
     max-height: 500px;
+  }
+
+  .hero-img {
+    width: 90%;
   }
 }
