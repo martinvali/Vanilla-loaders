@@ -118,6 +118,14 @@
   }
 }
 
+.loading-text-6 {
+  color: #343a40; /* Set a suitable text color */
+  font-weight: 600;
+  font-size: 24px;
+  display: inline-block;
+  position: relative;
+}
+
 .loading-text-6::before {
   content: "LOADING"; /* Change content to the text of your h1 */
   color: #5c7cfa; /* Color of the text */
