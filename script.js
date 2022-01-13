@@ -24,7 +24,7 @@ barba.init({
 (async function () {
   const dataContainer = document.querySelector(".spinners-container");
 
-  for (let i = 1; i <= 19; i++) {
+  for (let i = 1; i <= 20; i++) {
     const article = document.createElement("article");
 
     article.classList.add("spinner-article", "loading");

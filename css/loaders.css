@@ -127,7 +127,7 @@
 }
 
 .loading-text-6::before {
-  content: "LOADING"; /* Change content to the text of your h1 */
+  content: "LOADING"; /* Change content to the text of your loader */
   color: #5c7cfa; /* Color of the text */
   display: inline-block;
   position: absolute;
@@ -781,5 +781,74 @@
   }
   100% {
     transform: rotateZ(360deg) translateX(-50%) translateY(-100%);
+  }
+}
+
+.container-rectangle-4 {
+  display: flex;
+}
+
+.square {
+  display: inline-block;
+  width: 90px;
+  height: 20px;
+  background-color: #5c7cfa;
+  animation-name: loading-animation-rectangle-4-left;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.right {
+  animation-name: loading-animation-rectangle-4-right;
+}
+
+@keyframes loading-animation-rectangle-4-left {
+  16% {
+    transform: translateY(15px);
+  }
+
+  32% {
+    transform: translateX(90px) translateY(15px);
+  }
+
+  48% {
+    transform: translateY(0) translateX(90px);
+  }
+
+  64% {
+    transform: translateY(15px) translateX(90px);
+  }
+
+  80% {
+    transform: translateY(15px) translateX(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes loading-animation-rectangle-4-right {
+  16% {
+    transform: translateY(-15px);
+  }
+
+  32% {
+    transform: translateX(-90px) translateY(-15px);
+  }
+
+  48% {
+    transform: translateY(0) translateX(-90px);
+  }
+
+  64% {
+    transform: translateY(-15px) translateX(-90px);
+  }
+
+  80% {
+    transform: translateY(-15px) translateX(0);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
