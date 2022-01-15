@@ -50,6 +50,10 @@ VERTICAL SPACING
   font-weight: 600;
 }
 
+.logo.logo-instructions {
+  margin: 0 auto;
+}
+
 .instructions {
   background-color: var(--color-primary);
   color: #f3f6fd;
@@ -123,4 +127,15 @@ VERTICAL SPACING
   justify-content: center;
   justify-items: center;
   align-items: flex-start;
+}
+
+/* INSTRUCTIONS PAGE */
+
+.btn-back {
+  display: inline-block;
+  height: 100%;
+  transition: all 0.2s;
+}
+.btn-back:hover img {
+  transform: scale(1.05);
 }

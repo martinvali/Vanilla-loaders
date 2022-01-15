@@ -20,7 +20,8 @@ barba.init({
         });
       },
 
-      beforeEnter() {
+      beforeEnter(data) {
+        data.current.container.remove();
         document.head.querySelector("script").remove();
         const script = document.createElement("script");
         script.type = "text/javascript";
@@ -34,15 +35,18 @@ barba.init({
       leave(data) {
         return gsap.to(data.current.container, {
           opacity: 0,
-          duration: 2,
+          duration: 1,
         });
       },
       enter(data) {
-        data.current.container.remove();
         return gsap.from(data.next.container, {
           opacity: 0,
-          duration: 2,
+          duration: 1,
         });
+      },
+
+      beforeEnter(data) {
+        data.current.container.remove();
       },
     },
   ],
