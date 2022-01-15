@@ -5,6 +5,7 @@ import { random } from "gsap/all";
 barba.init({
   transitions: [
     {
+      name: "to-instructions",
       leave(data) {
         return gsap.to(data.current.container, {
           opacity: 0,
@@ -16,6 +17,10 @@ barba.init({
           opacity: 0,
           duration: 2,
         });
+      },
+
+      beforeEnter(data) {
+        console.log(data);
       },
     },
   ],
