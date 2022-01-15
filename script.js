@@ -28,6 +28,22 @@ barba.init({
         document.head.append(script);
       },
     },
+    {
+      name: "instructions",
+      to: { namespace: "instructions" },
+      leave(data) {
+        return gsap.to(data.current.container, {
+          opacity: 0,
+          duration: 2,
+        });
+      },
+      enter(data) {
+        return gsap.from(data.next.container, {
+          opacity: 0,
+          duration: 2,
+        });
+      },
+    },
   ],
 });
 
