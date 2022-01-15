@@ -21,11 +21,11 @@ barba.init({
       },
 
       beforeEnter(data) {
+        document.head.querySelector("script").remove();
         const script = document.createElement("script");
         script.type = "text/javascript";
         script.src = "dist/index.js";
         document.head.append(script);
-        document.currentScript.remove();
       },
     },
   ],
