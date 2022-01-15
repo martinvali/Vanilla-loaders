@@ -5,8 +5,8 @@ import { random } from "gsap/all";
 barba.init({
   transitions: [
     {
-      name: "instructions",
-      to: { namespace: "instructions" },
+      name: "home",
+      to: { namespace: "home" },
       leave(data) {
         return gsap.to(data.current.container, {
           opacity: 0,
@@ -20,7 +20,7 @@ barba.init({
         });
       },
 
-      beforeEnter(data) {
+      beforeEnter() {
         document.head.querySelector("script").remove();
         const script = document.createElement("script");
         script.type = "text/javascript";
