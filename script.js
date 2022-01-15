@@ -38,6 +38,7 @@ barba.init({
         });
       },
       enter(data) {
+        data.current.container.remove();
         return gsap.from(data.next.container, {
           opacity: 0,
           duration: 2,
