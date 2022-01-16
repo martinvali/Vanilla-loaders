@@ -18,7 +18,7 @@ barba.init({
           },
           {
             clipPath: "circle(0% at 50% 50%)",
-            duration: 2,
+            duration: 1,
           }
         );
       },
@@ -30,7 +30,7 @@ barba.init({
           },
           {
             clipPath: "circle(100% at 50% 50%)",
-            duration: 2,
+            duration: 1,
           }
         );
       },
@@ -48,13 +48,15 @@ barba.init({
       name: "instructions",
       to: { namespace: "instructions" },
       leave(data) {
+        data.current.container.style.backgroundColor = "#edf2ff";
+        data.next.container.style.backgroundColor = "#edf2ff";
         document.querySelector("body").style.backgroundColor = "black";
         return gsap.fromTo(
           data.current.container,
           { clipPath: "circle(100% at 50% 50%)" },
           {
             clipPath: "circle(0%)",
-            duration: 2,
+            duration: 1,
           }
         );
       },
@@ -66,7 +68,7 @@ barba.init({
           },
           {
             clipPath: "circle(100% at 50% 50%)",
-            duration: 2,
+            duration: 1,
           }
         );
       },
