@@ -33,16 +33,26 @@ barba.init({
       name: "instructions",
       to: { namespace: "instructions" },
       leave(data) {
-        return gsap.to(data.current.container, {
-          clipPath: "circle(0%)",
-          duration: 4,
-        });
+        return gsap.fromTo(
+          data.current.container,
+          { clipPath: "circle(100% at 50% 50%)" },
+          {
+            clipPath: "circle(0%)",
+            duration: 4,
+          }
+        );
       },
       enter(data) {
-        return gsap.from(data.next.container, {
-          clipPath: "circle(0%)",
-          duration: 4,
-        });
+        return gsap.fromTo(
+          data.next.container,
+          {
+            clipPath: "circle(0% at 50% 50%)",
+          },
+          {
+            clipPath: "circle(100% at 50% 50%)",
+            duration: 4,
+          }
+        );
       },
 
       beforeEnter(data) {
