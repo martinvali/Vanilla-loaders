@@ -10,12 +10,13 @@ barba.init({
       leave(data) {
         return gsap.to(data.current.container, {
           clipPath: "circle(20%)",
-          duration: 0.25,
+          duration: 1,
         });
       },
       enter(data) {
         return gsap.from(data.next.container, {
-          duration: 0.25,
+          clipPath: "circle(20%)",
+          duration: 1,
         });
       },
 
@@ -33,13 +34,13 @@ barba.init({
       to: { namespace: "instructions" },
       leave(data) {
         return gsap.to(data.current.container, {
-          opacity: 0,
+          clipPath: "circle(20%)",
           duration: 1,
         });
       },
       enter(data) {
         return gsap.from(data.next.container, {
-          opacity: 0,
+          clipPath: "circle(20%)",
           duration: 1,
         });
       },
