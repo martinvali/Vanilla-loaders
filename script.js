@@ -18,7 +18,7 @@ barba.init({
           },
           {
             clipPath: "circle(0% at 50vw 50vh)",
-            duration: 1,
+            duration: 0.5,
           }
         );
       },
@@ -30,7 +30,7 @@ barba.init({
           },
           {
             clipPath: "circle(100% at 50vw 50vh)",
-            duration: 1,
+            duration: 0.5,
           }
         );
       },
@@ -56,7 +56,7 @@ barba.init({
           { clipPath: "circle(100% at 50vw 50vh)" },
           {
             clipPath: "circle(0% at 50vw 50vh)",
-            duration: 1,
+            duration: 0.5,
           }
         );
       },
@@ -68,7 +68,7 @@ barba.init({
           },
           {
             clipPath: "circle(100% at 50vw 50vh)",
-            duration: 1,
+            duration: 0.5,
           }
         );
       },

@@ -56,6 +56,17 @@
   .spinners-container {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .instructions-container {
+    padding-top: 8rem;
+  }
+  .instructions-heading {
+    font-size: 2.765rem;
+  }
+
+  .instructions-text {
+    font-size: 2.304rem;
+  }
 }
 
 @media only screen and (min-width: 62.5em) {
@@ -112,5 +123,12 @@
 
   .instructions-illustration-container {
     flex: 1 0 60%;
+  }
+  .instructions-text-container {
+    flex: 1 0 40%;
+  }
+
+  .instructions-heading {
+    font-size: 3.318rem;
   }
 }
