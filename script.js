@@ -9,14 +9,14 @@ barba.init({
       to: { namespace: "home" },
       leave(data) {
         return gsap.to(data.current.container, {
-          clipPath: "circle(20%)",
-          duration: 1,
+          clipPath: "circle(0%)",
+          duration: 4,
         });
       },
       enter(data) {
         return gsap.from(data.next.container, {
-          clipPath: "circle(20%)",
-          duration: 1,
+          clipPath: "circle(0%)",
+          duration: 4,
         });
       },
 
@@ -34,14 +34,14 @@ barba.init({
       to: { namespace: "instructions" },
       leave(data) {
         return gsap.to(data.current.container, {
-          clipPath: "circle(20%)",
-          duration: 1,
+          clipPath: "circle(0%)",
+          duration: 4,
         });
       },
       enter(data) {
         return gsap.from(data.next.container, {
-          clipPath: "circle(20%)",
-          duration: 1,
+          clipPath: "circle(0%)",
+          duration: 4,
         });
       },
 
