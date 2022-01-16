@@ -9,14 +9,13 @@ barba.init({
       to: { namespace: "home" },
       leave(data) {
         return gsap.to(data.current.container, {
-          opacity: 0,
-          duration: 2,
+          clipPath: "circle(20%)",
+          duration: 0.25,
         });
       },
       enter(data) {
         return gsap.from(data.next.container, {
-          opacity: 0,
-          duration: 2,
+          duration: 0.25,
         });
       },
 
