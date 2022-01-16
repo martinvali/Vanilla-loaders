@@ -18,6 +18,11 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #edf2ff;
   overflow-x: hidden;
+  min-height: 100vh;
+}
+
+main {
+  min-height: 100vh;
 }
 
 a {

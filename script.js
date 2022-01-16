@@ -53,9 +53,9 @@ barba.init({
         document.querySelector("body").style.backgroundColor = "black";
         return gsap.fromTo(
           data.current.container,
-          { clipPath: "circle(100% at 50% 50%)" },
+          { clipPath: "circle(100% at 50vw 50vh)" },
           {
-            clipPath: "circle(0%)",
+            clipPath: "circle(0% at 50vw 50vh)",
             duration: 1,
           }
         );
@@ -64,10 +64,10 @@ barba.init({
         return gsap.fromTo(
           data.next.container,
           {
-            clipPath: "circle(0% at 50% 50%)",
+            clipPath: "circle(0% at 50vw 50vh)",
           },
           {
-            clipPath: "circle(100% at 50% 50%)",
+            clipPath: "circle(100% at 50vw 50vh)",
             duration: 1,
           }
         );
