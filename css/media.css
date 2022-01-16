@@ -8,6 +8,9 @@
   .spinners-container {
     grid-template-columns: repeat(3, 1fr);
   }
+  .instructions-container {
+    padding-top: 6.4rem;
+  }
 }
 @media only screen and (min-width: 40.625em) {
   .outer-container {
@@ -38,6 +41,10 @@
 
   .logo {
     font-size: 2.765rem;
+  }
+
+  .btn-back img {
+    width: 32px;
   }
 }
 
@@ -88,5 +95,18 @@
 
   .logo {
     font-size: 3.318rem;
+  }
+
+  .instructions-container {
+    flex-direction: row;
+    align-items: center;
+  }
+  .instructions-illustration {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .instructions-illustration-container {
+    flex: 1 0 60%;
   }
 }

@@ -50,23 +50,6 @@ VERTICAL SPACING
   font-weight: 600;
 }
 
-.logo.logo-instructions {
-  margin: 0 auto;
-}
-
-.instructions {
-  background-color: var(--color-primary);
-  color: #f3f6fd;
-  font-size: 1.6rem;
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
-  transition: background-color 0.2s;
-}
-
-.instructions:hover {
-  background-color: #5c7cfa;
-}
-
 /* HERO SECTION */
 
 .main {
@@ -135,6 +118,31 @@ VERTICAL SPACING
 
 /* INSTRUCTIONS PAGE */
 
+.logo.logo-instructions {
+  margin: 0 auto;
+  transform: translateX(-16px);
+}
+
+.instructions {
+  background-color: var(--color-primary);
+  color: #f3f6fd;
+  font-size: 1.6rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.instructions:hover {
+  background-color: #5c7cfa;
+}
+
+.instructions-heading {
+  color: var(--color-primary);
+  margin-bottom: 1.8rem;
+  font-size: 2.304rem;
+  font-weight: 600;
+}
+
 .btn-back {
   display: inline-block;
   height: 100%;
@@ -144,9 +152,30 @@ VERTICAL SPACING
 }
 
 .btn-back img {
-  width: 32px;
+  width: 24px;
+  transition: all 0.2s;
 }
 
 .btn-back:hover img {
   transform: scale(1.05);
+}
+
+.instructions-container {
+  flex-wrap: nowrap;
+  padding-top: 4.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.instructions-text {
+  font-size: 1.92rem;
+  color: #212529;
+  font-weight: 500;
+}
+
+.instructions-illustration {
+  width: 100%;
+  display: block;
+  max-width: 700px;
+  margin: 0 auto;
 }
