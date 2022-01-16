@@ -8,16 +8,31 @@ barba.init({
       name: "home",
       to: { namespace: "home" },
       leave(data) {
-        return gsap.to(data.current.container, {
-          clipPath: "circle(0%)",
-          duration: 4,
-        });
+        document.querySelector("body").style.backgroundColor = "black";
+        data.current.container.style.backgroundColor = "#edf2ff";
+        data.next.container.style.backgroundColor = "#edf2ff";
+        return gsap.fromTo(
+          data.current.container,
+          {
+            clipPath: "circle(100% at 50% 50%)",
+          },
+          {
+            clipPath: "circle(0% at 50% 50%)",
+            duration: 2,
+          }
+        );
       },
       enter(data) {
-        return gsap.from(data.next.container, {
-          clipPath: "circle(0%)",
-          duration: 4,
-        });
+        return gsap.fromTo(
+          data.next.container,
+          {
+            clipPath: "circle(0% at 50% 50%)",
+          },
+          {
+            clipPath: "circle(100% at 50% 50%)",
+            duration: 2,
+          }
+        );
       },
 
       beforeEnter(data) {
@@ -33,12 +48,13 @@ barba.init({
       name: "instructions",
       to: { namespace: "instructions" },
       leave(data) {
+        document.querySelector("body").style.backgroundColor = "black";
         return gsap.fromTo(
           data.current.container,
           { clipPath: "circle(100% at 50% 50%)" },
           {
             clipPath: "circle(0%)",
-            duration: 4,
+            duration: 2,
           }
         );
       },
@@ -50,7 +66,7 @@ barba.init({
           },
           {
             clipPath: "circle(100% at 50% 50%)",
-            duration: 4,
+            duration: 2,
           }
         );
       },
