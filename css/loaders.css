@@ -790,7 +790,7 @@
 
 .rectangle-4 {
   display: inline-block;
-  width: 90px;
+  width: 70px;
   height: 20px;
   background-color: #5c7cfa;
   animation-name: loading-animation-rectangle-4-left;
@@ -809,15 +809,15 @@
   }
 
   32% {
-    transform: translateX(90px) translateY(15px);
+    transform: translateX(70px) translateY(15px);
   }
 
   48% {
-    transform: translateY(0) translateX(90px);
+    transform: translateY(0) translateX(70px);
   }
 
   64% {
-    transform: translateY(15px) translateX(90px);
+    transform: translateY(15px) translateX(70px);
   }
 
   80% {
