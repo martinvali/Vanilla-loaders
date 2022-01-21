@@ -11,6 +11,14 @@
   .instructions-container {
     padding-top: 6.4rem;
   }
+  .version-paragraph {
+    order: 1;
+  }
+
+  .header-loaders {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 @media only screen and (min-width: 40.625em) {
   .outer-container {
