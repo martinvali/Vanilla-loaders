@@ -115,6 +115,7 @@
   .instructions-container {
     flex-direction: row;
     align-items: center;
+    gap: 10%;
   }
   .instructions-illustration {
     max-width: 100%;
