@@ -834,15 +834,15 @@
   }
 
   32% {
-    transform: translateX(-90px) translateY(-15px);
+    transform: translateX(-70px) translateY(-15px);
   }
 
   48% {
-    transform: translateY(0) translateX(-90px);
+    transform: translateY(0) translateX(-70px);
   }
 
   64% {
-    transform: translateY(-15px) translateX(-90px);
+    transform: translateY(-15px) translateX(-70px);
   }
 
   80% {
