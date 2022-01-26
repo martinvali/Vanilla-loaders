@@ -33,11 +33,18 @@
             </p>
           </div>
           <div class="instructions-illustration-container">
-            <img
-              class="instructions-illustration"
-              src="instructions-illustration.svg"
-              alt="illustration"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="instructions_illustration.webp"
+              />
+              <source type="image/svg" srcset="instructions_illustration.svg" />
+              <img
+                class="instructions-illustration"
+                src="instructions-illustration.png"
+                alt="Illustration"
+              />
+            </picture>
           </div>
         </div>
       </main>
