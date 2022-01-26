@@ -8,16 +8,18 @@ barba.init({
       name: "home",
       to: { namespace: "home" },
       leave(data) {
-        document.querySelector("body").style.backgroundColor = "black";
+        document.querySelector("body").style.backgroundColor = "#4263eb";
         data.current.container.style.backgroundColor = "#edf2ff";
         data.next.container.style.backgroundColor = "#edf2ff";
         return gsap.fromTo(
           data.current.container,
           {
-            clipPath: "circle(100% at 50vw 50vh)",
+            //   clipPath: "rectangle(100% at 50vw 50vh)",
+            transform: "translateX(0)",
           },
           {
-            clipPath: "circle(0% at 50vw 50vh)",
+            //  clipPath: "rectangle(0% at 50vw 50vh)",
+            transform: "translateX(-100vw)",
             duration: 0.5,
           }
         );
@@ -26,10 +28,12 @@ barba.init({
         return gsap.fromTo(
           data.next.container,
           {
-            clipPath: "circle(0% at 50vw 50vh)",
+            // clipPath: "rectangle(0% at 50vw 50vh)",
+            transform: "translateX(-100vw)",
           },
           {
-            clipPath: "circle(100% at 50vw 50vh)",
+            //clipPath: "rectangle(100% at 50vw 50vh)",
+            transform: "translateX(0)",
             duration: 0.5,
           }
         );
@@ -43,6 +47,9 @@ barba.init({
         script.src = "dist/index.js";
         document.head.append(script);
       },
+      afterEnter() {
+        document.querySelector("body").style.backgroundColor = "#edf2ff";
+      },
     },
     {
       name: "instructions",
@@ -50,12 +57,14 @@ barba.init({
       leave(data) {
         data.current.container.style.backgroundColor = "#edf2ff";
         data.next.container.style.backgroundColor = "#edf2ff";
-        document.querySelector("body").style.backgroundColor = "black";
+        document.querySelector("body").style.backgroundColor = "#4263eb";
         return gsap.fromTo(
           data.current.container,
-          { clipPath: "circle(100% at 50vw 50vh)" },
           {
-            clipPath: "circle(0% at 50vw 50vh)",
+            transform: "translateX(0)",
+          },
+          {
+            transform: "translateX(-100vw)",
             duration: 0.5,
           }
         );
@@ -64,10 +73,10 @@ barba.init({
         return gsap.fromTo(
           data.next.container,
           {
-            clipPath: "circle(0% at 50vw 50vh)",
+            transform: "translateX(-100vw)",
           },
           {
-            clipPath: "circle(100% at 50vw 50vh)",
+            transform: "translateX(0vw)",
             duration: 0.5,
           }
         );
@@ -75,6 +84,9 @@ barba.init({
 
       beforeEnter(data) {
         data.current.container.remove();
+      },
+      afterEnter() {
+        document.querySelector("body").style.backgroundColor = "#edf2ff";
       },
     },
   ],
