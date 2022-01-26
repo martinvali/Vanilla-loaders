@@ -33,7 +33,14 @@ VERTICAL SPACING
 96px
 
 */
+.main {
+  padding-top: 8rem;
+  padding-bottom: 2.4rem;
+}
 
+.barba-container {
+  min-height: 100vh;
+}
 /* HEADER */
 
 .header {
@@ -52,9 +59,6 @@ VERTICAL SPACING
 
 /* HERO SECTION */
 
-.main {
-  padding-top: 8rem;
-}
 .section-hero {
   margin-bottom: 4.8rem;
 }
