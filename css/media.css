@@ -100,6 +100,7 @@
 
   .section-main-text {
     flex: 1 0 40%;
+    margin-top: 9.2rem;
   }
   .section-main-img {
     flex: 1 0 60%;
