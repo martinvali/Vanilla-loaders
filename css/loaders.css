@@ -732,8 +732,8 @@
   border-radius: 50%;
   width: 115px;
   height: 115px;
-  background: radial-gradient(white 53%, transparent 55%),
-    conic-gradient(transparent 90deg, #5c7cfa 270deg);
+  background: radial-gradient(white 53%, rgba(255, 255, 255, 0) 55%),
+    conic-gradient(rgba(92, 124, 250, 0) 90deg, rgb(92, 124, 250) 270deg);
   animation-name: loading-animation-circle-8;
   animation-duration: 1s;
   animation-fill-mode: forwards;
