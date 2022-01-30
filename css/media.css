@@ -11,8 +11,9 @@
   .instructions-container {
     padding-top: 6.4rem;
   }
+
   .version-paragraph {
-    order: 1;
+    display: inline-block;
   }
 
   .header-loaders {

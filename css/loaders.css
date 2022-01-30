@@ -492,7 +492,7 @@
 }
 
 .circle-1:not(:last-of-type) {
-  margin-right: 15px;
+  margin-right: 15px; /* Due to flexbox gap's missing support on Safari */
 }
 
 @keyframes loading-animation-circle-1 {
