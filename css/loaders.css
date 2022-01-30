@@ -477,7 +477,6 @@
 
 .container-circle-1 {
   display: flex;
-  gap: 15px;
 }
 
 .circle-1 {
@@ -490,6 +489,10 @@
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+
+.circle-1:not(:last-of-type) {
+  margin-right: 15px;
 }
 
 @keyframes loading-animation-circle-1 {
