@@ -104,11 +104,25 @@ VERTICAL SPACING
 
 .select-shape {
   border: none;
-  padding: 0.25rem 0.5rem;
+  padding: 0.6rem 4rem;
+  padding-left: 1rem;
+
   border-radius: 5px;
   font-size: 1.92rem;
   background-color: white;
   font-family: inherit;
+  appearance: none;
+  position: relative;
+  background-image: url(/arrowdown.svg);
+  background-position: 95% center;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  min-width: 200px;
+}
+
+.select-shape:focus {
+  border: none;
+  box-shadow: none;
 }
 
 .select-shape-label {
