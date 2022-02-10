@@ -112,6 +112,8 @@ VERTICAL SPACING
   background-color: white;
   font-family: inherit;
   appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   position: relative;
   background-image: url(/arrowdown.svg);
   background-position: 95% center;
