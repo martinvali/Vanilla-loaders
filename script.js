@@ -94,7 +94,9 @@ barba.init({
 
 (async function () {
   const dataContainer = document.querySelector(".spinners-container");
-
+  let controller;
+  controller = new AbortController();
+  const signal = controller.signal;
   for (let i = 1; i <= 20; i++) {
     const article = document.createElement("article");
 
@@ -103,7 +105,9 @@ barba.init({
   }
   const startingLoaders = await fetch("https://vanillaloaders.herokuapp.com/", {
     mode: "cors",
+    signal,
   });
+
   const data = await startingLoaders.json();
   const articles = document.querySelectorAll(".spinner-article");
   data.forEach((element, index) => {
@@ -125,6 +129,9 @@ barba.init({
   const selectShapeEl = document.querySelector(".select-shape");
 
   selectShapeEl.addEventListener("change", async function () {
+    if (controller) controller.abort();
+    controller = new AbortController();
+    const signal = controller.signal;
     spinnerEls =
       document.querySelectorAll(".spinner-article"); /* Update spinnerels */
     spinnerEls.forEach(function (el) {
@@ -132,7 +139,8 @@ barba.init({
       el.classList.add("loading");
     });
     const response = await fetch(
-      `https://vanillaloaders.herokuapp.com/loaders?type=${this.value}`
+      `https://vanillaloaders.herokuapp.com/loaders?type=${this.value}`,
+      { signal }
     );
 
     const loaders = await response.json();
