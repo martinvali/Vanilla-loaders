@@ -2,6 +2,8 @@ import barba from "@barba/core";
 import gsap from "gsap";
 import { random } from "gsap/all";
 
+let controller;
+
 barba.init({
   transitions: [
     {
@@ -94,7 +96,6 @@ barba.init({
 
 (async function () {
   const dataContainer = document.querySelector(".spinners-container");
-  let controller;
   controller = new AbortController();
   const signal = controller.signal;
   for (let i = 1; i <= 20; i++) {
@@ -129,7 +130,9 @@ barba.init({
   const selectShapeEl = document.querySelector(".select-shape");
 
   selectShapeEl.addEventListener("change", async function () {
-    if (controller) controller.abort();
+    if (controller) {
+      controller.abort();
+    }
     controller = new AbortController();
     const signal = controller.signal;
     spinnerEls =
